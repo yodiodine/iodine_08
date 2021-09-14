@@ -38,4 +38,16 @@ $(function(){
     $(".close").on("click",function(){
         $(".modal").hide();
     })
+    
+    //nav 각 메뉴 클릭
+    $("nav ul li span").on("click",function(){
+        let navIdx = $(this).parent().index();
+        if(navIdx==4){
+            //footer이동
+            window.scrollTo(0,$("#footer").offset().top);
+        }else{
+            //article 이동
+            window.scrollTo(0, $("#main-container article").eq(navIdx).offset().top);
+        }
+    })
 })

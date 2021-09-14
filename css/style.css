@@ -68,10 +68,10 @@ header .menu-wrap nav ul li{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-header .menu-wrap nav ul li a{
-    display: block;
     color: #fff;
+}
+header .menu-wrap nav ul li span{
+    cursor: pointer;
 }
 header .menu-wrap nav ul li a:after{
     content: '';
